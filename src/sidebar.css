@@ -1,0 +1,145 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 170px;
+  border: 1px solid rgb(202, 196, 196);
+  justify-content: space-between;
+  padding-left: 1.2rem;
+  padding-right: 1rem;
+  transition: 0.4s ease-in-out;
+}
+.sidebar .top {
+  padding-top: 2em;
+}
+.sidebar .top .logo span,
+.sidebar .top .res-logo span {
+  font-size: 22px;
+  font-weight: 800;
+  color: #646fd4;
+}
+.res-logo {
+  display: none;
+}
+.sidebar .top .searchBar {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 5px;
+  position: relative;
+}
+.sidebar .top .searchIcon {
+  position: absolute;
+  left: 5%;
+}
+.sidebar .top input {
+  padding: 8px 0;
+  border: 2px solid #646fd4;
+  outline: none;
+  padding-left: 30px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #646fd4;
+}
+.sidebar .top input::placeholder {
+  color: white;
+}
+.sidebar .top input:focus {
+  color: white;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 0.7em;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 5px;
+  color: rgb(88, 87, 87);
+  padding: 5px;
+}
+.list-item:hover {
+  background-color: #646fd494;
+  color: black;
+  transition: 0.4s ease-in-out;
+  border-radius: 10px;
+}
+.center .icon {
+  font-size: 18px;
+}
+.bottom {
+  padding-bottom: 2em;
+}
+.bottom .ad {
+  background-color: #646fd4;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 13px;
+  padding-bottom: 13px;
+  margin-bottom: 1rem;
+}
+.bottom .ad p {
+  color: white;
+  text-align: center;
+}
+.bottom .ad button {
+  padding: 8px 10px;
+  width: 100%;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    padding: 0;
+    align-items: center;
+    width: 70px;
+    transition: 0.4s;
+  }
+  .logo {
+    display: none;
+  }
+  .res-logo {
+    display: flex;
+  }
+  .top .searchBar input {
+    display: none;
+  }
+  .top .searchBar .searchIcon {
+    background-color: #646fd4;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .searchBar {
+    margin-right: 37px;
+    margin-bottom: 1rem;
+  }
+  .icon {
+    background-color: #646fd4;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .bottom .ad {
+    display: none;
+  }
+  .center {
+    padding-left: 0;
+    margin: 20px 0;
+  }
+  .list-item span {
+    display: none;
+  }
+}
